@@ -3,6 +3,8 @@ class bodyParts:
         self.hand = "hand"
         self.foot = "foot"
 
+    def display(self):
+        print( self.hand )
     
 
 class creatures:
@@ -11,15 +13,17 @@ class creatures:
         self.name = name
 
     class bodyPart(bodyParts):
-        def display(self):
+        def __init__(self):
             super().__init__() 
         
         def display(self):
-            return self.hand
+            print("bitch")
+            super().display()
+            
 
 x = creatures().bodyPart().display()
 # y = x.bodyPart()
-print(x)
+x
 
 
 # class A:
