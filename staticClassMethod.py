@@ -22,6 +22,8 @@ class MyClass:
 
 new_line = "\n"
 obj = MyClass()
-print(obj.method(){new_line}
-obj.classmethod(){new_line}
-obj.staticmethod())
+print(obj.method())
+print('\n')                            
+print(obj.classmethod())
+print('\n')
+print(obj.staticmethod())
